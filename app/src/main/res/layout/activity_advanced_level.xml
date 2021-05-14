@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C5C6C7"
+    tools:context=".activity_advanced_level">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="177dp"
+                android:layout_height="63dp"
+                android:background="@drawable/custom_button_v1"
+                android:gravity="center"
+                android:text="@string/score"
+                android:textColor="#F7F8FB"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.084" />
+
+            <EditText
+                android:id="@+id/edit_text_img_01"
+                android:layout_width="241dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="245dp"
+                android:background="#575E69"
+                android:gravity="center"
+                android:hint="@string/first_car_name"
+                android:inputType="textPersonName|textCapWords"
+                android:textColor="#F8F3F3"
+                android:textColorHint="#FFFFFF"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/random_imageBtn_V4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/random_imageBtn_V4"
+                android:layout_width="217dp"
+                android:layout_height="219dp"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/score"
+                app:layout_constraintVertical_bias="0.143" />
+
+
+            <EditText
+                android:id="@+id/edit_text_img_02"
+                android:layout_width="241dp"
+                android:layout_height="42dp"
+                android:background="#575E69"
+                android:gravity="center"
+                android:hint="@string/second_car_name"
+                android:inputType="textPersonName|textCapWords"
+                android:textColor="#F8F3F3"
+                android:textColorHint="#FFFFFF"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/random_imageBtn_V5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/random_imageBtn_V4"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/random_imageBtn_V5"
+                android:layout_width="217dp"
+                android:layout_height="219dp"
+                android:layout_marginTop="620dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edit_text_img_03"
+                android:layout_width="241dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="23dp"
+                android:background="#575E69"
+                android:gravity="center"
+                android:hint="@string/third_car_name"
+                android:inputType="textPersonName|textCapWords"
+                android:textColor="#F8F3F3"
+                android:textColorHint="#FFFFFF"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/random_imageBtn_V6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/random_imageBtn_V5"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/random_imageBtn_V6"
+                android:layout_width="217dp"
+                android:layout_height="219dp"
+                android:layout_marginTop="920dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_submit_03"
+                android:layout_width="250sp"
+                android:layout_height="60dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/custom_button_v1"
+                android:text="@string/submit_button"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/random_imageBtn_V6"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageButton
+                android:id="@+id/btn_goHome2"
+                android:layout_width="73dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/custom_button_v2"
+                android:contentDescription="@string/home_btn"
+                android:onClick="home"
+                android:src="@drawable/home_button_image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_submit_03" />
+
+            <TextView
+                android:id="@+id/advanced_timer"
+                android:layout_width="108dp"
+                android:layout_height="61dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/custom_timer"
+                android:gravity="center"
+                android:text="@string/time_remaining_hints"
+                android:textColor="#F6F4F4"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.026"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</RelativeLayout>

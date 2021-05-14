@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C5C6C7"
+    tools:context=".Hints">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back"
+        android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="147dp"
+        android:layout_height="43dp"
+        android:background="#097D68"
+        android:gravity="center"
+        android:hint="@string/enter"
+        android:inputType="textPersonName|textCapWords"
+        android:textColor="#F8F3F3"
+        android:textColorHint="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/rand_image2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toEndOf="@+id/hints_timer"
+        app:layout_constraintTop_toTopOf="@+id/hints_timer"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/rand_image2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="192dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/dashes"
+        android:layout_width="347dp"
+        android:layout_height="49dp"
+        android:background="@drawable/custom_button_v1"
+        android:gravity="center"
+        android:text="@string/hint_dashes"
+        android:textAlignment="center"
+        android:textColor="#FFFDFD"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rand_image2"
+        app:layout_constraintVertical_bias="0.197" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dashes"
+        app:layout_constraintVertical_bias="0.181" />
+
+    <ImageButton
+        android:id="@+id/btn_goHome2"
+        android:layout_width="73dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_button_v2"
+        android:contentDescription="@string/home_btn"
+        android:onClick="home"
+        android:src="@drawable/home_button_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/hints_timer"
+        android:layout_width="125dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_timer"
+        android:freezesText="true"
+        android:gravity="center"
+        android:text="@string/time_remaining_hints"
+        android:textColor="#F6F4F4"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</RelativeLayout>

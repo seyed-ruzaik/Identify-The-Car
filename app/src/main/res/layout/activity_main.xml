@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <Button
+                android:id="@+id/btn_identify_car"
+                android:layout_width="247dp"
+                android:layout_height="84dp"
+                android:layout_marginTop="84dp"
+                android:background="@drawable/custom_button_v3"
+                android:text="@string/identify_the_car"
+                android:textColor="#ffff"
+                android:textSize="20sp"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_hints"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/btn_hints"
+                android:layout_width="247dp"
+                android:layout_height="84dp"
+                android:layout_marginTop="84dp"
+                android:background="@drawable/custom_button_v3"
+                android:text="@string/hints"
+                android:textColor="#ffff"
+                android:textSize="20sp"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_Identify_car_make" />
+
+
+            <Button
+                android:id="@+id/btn_Identify_car_make"
+                android:layout_width="247dp"
+                android:layout_height="84dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/custom_button_v3"
+                android:text="@string/identify_the_car_make"
+                android:textColor="#ffff"
+                android:textSize="20sp"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <Button
+                android:id="@+id/btn_advancedLevel"
+                android:layout_width="247dp"
+                android:layout_height="84dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/custom_button_v3"
+                android:text="@string/go_advanced_level"
+                android:textColor="#ffff"
+                android:textSize="20sp"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_identify_car" />
+
+            <TextView
+                android:id="@+id/btn_level"
+                android:layout_width="247dp"
+                android:layout_height="84dp"
+                android:layout_marginTop="84dp"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/custom_button_v3"
+                android:text="@string/activate_timer"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textAllCaps="true"
+                android:textColor="#ffff"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.481"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_advancedLevel" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchCompat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textOff="@string/switch_off"
+                android:textOn="@string/switch_on"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_level"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_level"
+                app:layout_constraintVertical_bias="0.754"
+                app:showText="true" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="288dp"
+                android:layout_height="158dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/custom_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/animated" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/custom_textview"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="@string/app_name"
+                android:textAllCaps="true"
+                android:textColor="#ffff"
+                android:textSize="32sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                tools:targetApi="jelly_bean" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</RelativeLayout>

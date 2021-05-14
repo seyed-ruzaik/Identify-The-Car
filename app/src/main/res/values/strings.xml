@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Car Quiz</string>
+    <string name="advanced_level">Advanced Level</string>
+    <string name="identify_the_car_make">Identify the Car Make</string>
+    <string name="identify_the_car">Identify The Car</string>
+    <string name="switch_on">ON</string>
+    <string name="switch_off">OFF</string>
+    <string name="identify_the_car__make">Identify The Car Make</string>
+    <string name="identify">Identify</string>
+    <string name="home_btn">Home</string>
+
+    <string-array name="list_cars">
+        <item>Audi</item>
+        <item>Porsche</item>
+        <item>Bmw</item>
+        <item>Ford</item>
+        <item>Toyota</item>
+        <item>Tesla</item>
+        <item>Lexus</item>
+        <item>Honda</item>
+        <item>Mazda</item>
+        <item>Mercedes</item>
+        <item>Nissan</item>
+        <item>Jaguar</item>
+        <item>Mitsubishi</item>
+        <item>Fiat</item>
+        <item>Chevrolet</item>
+    </string-array>
+
+    <string name="toast_message_01">CORRECT!</string>
+    <string name="toast_message_02">WRONG!</string>
+    <string name="hints">Hints</string>
+    <string name="hint_dashes">------------------</string>
+    <string name="submit">Submit</string>
+    <string name="enter">Enter</string>
+    <string name="next">Next</string>
+    <string name="go_advanced_level">Go Advanced Level</string>
+    <string name="advanced_level_header">Advanced-Level</string>
+    <string name="score">SCORE: 0</string>
+    <string name="submit_button">Submit</string>
+    <string name="third_car_name">Name Of The Third Car</string>
+    <string name="second_car_name">Name Of The Second Car</string>
+    <string name="first_car_name">Name Of The First Car</string>
+    <string name="time_remaining_hints">Time Remaining</string>
+    <string name="activate_timer">Activate Timer</string>
+
+</resources>

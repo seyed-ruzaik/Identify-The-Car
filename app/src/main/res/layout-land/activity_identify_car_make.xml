@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C5C6C7"
+    tools:context=".IdentifyCarMake">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/identify_make"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_timer"
+                android:text="@string/time_remaining_hints"
+                android:textColor="#F2F4FA"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.048" />
+
+            <ImageView
+                android:id="@+id/rand_image"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="25dp"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/identify_make"
+                app:layout_constraintVertical_bias="0.053" />
+
+            <Spinner
+                android:id="@+id/list_cars"
+                android:layout_width="300dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="124dp"
+                android:background="#0C5440"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rand_image"
+                app:layout_constraintVertical_bias="0.2" />
+
+            <Button
+                android:id="@+id/btn_identify"
+                android:layout_width="250sp"
+                android:layout_height="60dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/identify"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:backgroundTint="#A83281"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/list_cars"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageButton
+                android:id="@+id/btn_goHome2"
+                android:layout_width="73dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/custom_button_v2"
+                android:contentDescription="@string/home_btn"
+                android:onClick="home"
+                android:src="@drawable/home_button_image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_identify"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</RelativeLayout>

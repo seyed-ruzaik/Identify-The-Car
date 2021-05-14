@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C5C6C7"
+    tools:context=".IdentifyCar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/identify_car_timerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_timer"
+                android:text="@string/time_remaining_hints"
+                android:textColor="#F7F8FB"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.050" />
+
+            <TextView
+                android:id="@+id/tv_random_img_name_V1"
+                android:layout_width="287dp"
+                android:layout_height="85dp"
+                android:layout_marginTop="45dp"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textColor="#34495E"
+                android:textSize="32sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/identify_car_timerText" />
+
+
+            <TextView
+                android:id="@+id/tv_random_img_name_V2"
+                android:layout_width="287dp"
+                android:layout_height="85dp"
+                android:layout_marginTop="45dp"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textColor="#34495E"
+                android:textSize="32sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/identify_car_timerText" />
+
+            <TextView
+                android:id="@+id/tv_random_img_name_V3"
+                android:layout_width="287dp"
+                android:layout_height="85dp"
+                android:layout_marginTop="45dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#34495E"
+                android:textSize="32sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/identify_car_timerText" />
+
+            <ImageButton
+                android:id="@+id/random_imageBtn_V1"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/identify_car_timerText"
+                app:layout_constraintVertical_bias="0.143" />
+
+            <ImageButton
+                android:id="@+id/random_imageBtn_V2"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="588dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/random_imageBtn_V3"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="928dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_submit_02"
+                android:layout_width="250sp"
+                android:layout_height="60dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/custom_button_v1"
+                android:text="@string/next"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/random_imageBtn_V3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageButton
+                android:id="@+id/btn_goHome2"
+                android:layout_width="73dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/custom_button_v2"
+                android:contentDescription="@string/home_btn"
+                android:onClick="home"
+                android:src="@drawable/home_button_image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_submit_02" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</RelativeLayout>
